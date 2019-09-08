@@ -21,7 +21,7 @@ namespace pxsim {
      */
     export class Board extends pxsim.BaseBoard {
         public bus: EventBus;
-        public element : SVGSVGElement;
+        public canvasElement : SVGSVGElement;
         public spriteElement: SVGCircleElement;
         public hareElement: SVGCircleElement;
         public sprite : Sprite;
@@ -30,16 +30,16 @@ namespace pxsim {
         constructor() {
             super();
             this.bus = new EventBus(runtime);
-            this.element = <SVGSVGElement><any>document.getElementById('svgcanvas');
-            this.spriteElement = <SVGCircleElement>this.element.getElementById('svgsprite');
-            this.hareElement = <SVGCircleElement>this.element.getElementById('svgsprite2');
+            this.canvasElement = <SVGSVGElement><any>document.getElementById('svgcanvas');
+            this.spriteElement = <SVGCircleElement>this.canvasElement.getElementById('svgsprite');
+            this.hareElement = <SVGCircleElement>this.canvasElement.getElementById('svgsprite2');
             this.sprite = new Sprite()
             this.hare = new Sprite();
         }
         
         initAsync(msg: pxsim.SimulatorRunMessage): Promise<void> {
             document.body.innerHTML = ''; // clear children
-            document.body.appendChild(this.element);
+            document.body.appendChild(this.canvasElement);
 
             return Promise.resolve();
         }       
