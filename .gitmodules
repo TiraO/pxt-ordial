@@ -1,0 +1,9 @@
+[submodule "ordial"]
+	path = ordial
+	url = https://github.com/segfaultsoftware/ordial.git
+[submodule "sim/ordial"]
+	path = sim/ordial
+	url = https://github.com/segfaultsoftware/ordial.git
+[submodule "sim/public/ordial"]
+	path = sim/public/ordial
+	url = https://github.com/segfaultsoftware/ordial.git
