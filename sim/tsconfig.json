@@ -1,12 +1,15 @@
 {
     "compilerOptions": {
-        "target": "es5",
-        "noImplicitAny": true,
-        "noImplicitReturns": true,
-        "declaration": true,
+        "target": "es6",
+        "noImplicitAny": false,
+        "noImplicitReturns": false,
+        "declaration": false,
         "out": "../built/sim.js",
         "rootDir": ".",
         "newLine": "LF",
-        "sourceMap": false
-    }
+        "sourceMap": false,
+        "module": "commonjs",
+        "allowJs": true
+    },
+    "exclude": ["./public/ordial"]
 }

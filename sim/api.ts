@@ -25,7 +25,7 @@ namespace pxsim.turtle {
     //% weight=90
     //% blockId=sampleForward block="forward %steps"
     export function forwardAsync(steps: number) {
-        return board().sprite.forwardAsync(steps)
+        return Promise.resolve()
     }
 
     /**
@@ -37,12 +37,6 @@ namespace pxsim.turtle {
     //% blockId=sampleTurn block="turn %direction|by %angle degrees"
     //% angle.min=-180 angle.max=180
     export function turnAsync(direction: Direction, angle: number) {
-        let b = board();
-
-        if (direction == Direction.Left)
-            b.sprite.angle -= angle;
-        else
-            b.sprite.angle += angle;
         return Promise.delay(400)
     }
 
