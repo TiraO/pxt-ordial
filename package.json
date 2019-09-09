@@ -1,7 +1,7 @@
 {
-  "name": "pxt-sample",
-  "version": "2.0.2",
-  "description": "sample target for PXT",
+  "name": "pxt-ordial",
+  "version": "0.0.2",
+  "description": "Set up Ordial evolution simulations using PxtBlockly",
   "keywords": [
     "JavaScript",
     "education",
@@ -9,11 +9,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Microsoft/pxt-sample.git"
+    "url": "git+https://github.com/tirao/pxt-ordial.git"
   },
   "author": "",
   "license": "MIT",
-  "homepage": "https://github.com/Microsoft/pxt-sample#readme",
+  "homepage": "https://github.com/tirao/pxt-ordial#readme",
   "files": [
     "README.md",
     "pxtarget.json",

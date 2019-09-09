@@ -1,7 +1,7 @@
 {
-    "id": "sample",
-    "name": "sample",
-    "title": "MakeCode Editor Sample",
+    "id": "pxt-ordial",
+    "name": "PxtOrdial",
+    "title": "Ordial MakeCode Edition",
     "corepkg": "core",
     "cloud": {
         "workspace": false,
